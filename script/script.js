@@ -1,4 +1,4 @@
-      // Smooth Scroll JavaScript with offset
+// Smooth Scroll JavaScript with offset
       document.querySelectorAll(".nav-links a").forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
