@@ -12,23 +12,27 @@
 </head>
 
 <body>
-    <!-- Dark blue box at the top with the logo and text -->
     <div class="top-blue-box">
-        <div style="display: flex; align-items: center"> <img src="./gambar/logo.webp" alt="Logo Sekolah" /> <span class="school-name">SDN BINTARO 05 PAGI</span> </div>
-    </div> <!-- Kotak biru tua di bawah -->
+        <div style="display: flex; align-items: center"> <img src="./gambar/logo.webp" alt="Logo Sekolah" loading="lazy" /> <span class="school-name">SDN BINTARO 05 PAGI</span> </div>
+    </div>
     <div class="bottom-blue-box">
         <div class="nav-links"> <a href="#beranda">Beranda</a> <a href="#profil-sekolah">Profil Sekolah</a> <a href="#fasilitas-sekolah">Fasilitas Sekolah</a> <a href="#ekstrakurikuler" style="margin-right: 25px">Ekstrakurikuler</a> </div>
     </div>
     <section id="beranda">
-        <!-- Video autoplay (diletakkan di atas slideshow) -->
         <div class="video-container"> <video autoplay loop muted>
                 <source src="./video/VID-20241022-WA0049.mp4" type="video/mp4" />
-            </video> </div> <!-- Beranda Section with Slideshow -->
+            </video> </div>
         <section id="beranda">
-            <!-- Slideshow container -->
-            <div class="slideshow-container"> <img src="./gambar/IMG-20241022-WA0027.webp" class="slides fade" alt="Image 1" /> <img src="./gambar/IMG-20241022-WA0048.webp" class="slides fade" alt="Image 2" /> <img src="./gambar/IMG-20241022-WA0015.webp" class="slides fade" alt="Image 3" /> <img src="./gambar/IMG-20241022-WA0019.webp" class="slides fade" alt="Image 4" /> <img src="./gambar/IMG-20241022-WA0021.webp" class="slides fade" alt="Image 5" /> <img src="./gambar/IMG-20241022-WA0025.webp" class="slides fade" alt="Image 6" /> </div>
+            <div class="slideshow-container"> 
+                <img src="./gambar/IMG-20241022-WA0027.webp" class="slides fade" alt="Image 1" loading="lazy" /> 
+                <img src="./gambar/IMG-20241022-WA0048.webp" class="slides fade" alt="Image 2" loading="lazy" /> 
+                <img src="./gambar/IMG-20241022-WA0015.webp" class="slides fade" alt="Image 3" loading="lazy" /> 
+                <img src="./gambar/IMG-20241022-WA0019.webp" class="slides fade" alt="Image 4" loading="lazy" /> 
+                <img src="./gambar/IMG-20241022-WA0021.webp" class="slides fade" alt="Image 5" loading="lazy" /> 
+                <img src="./gambar/IMG-20241022-WA0025.webp" class="slides fade" alt="Image 6" loading="lazy" /> 
+            </div>
             <hr class="full-width-line" />
-        </section> <!-- Profil Sekolah Section -->
+        </section>
         <section id="profil-sekolah">
             <center>
                 <h2>Profil Sekolah</h2>
@@ -38,21 +42,21 @@
             </center>
             <hr>
             <center>
-                <p> Struktur Organisasi SDN BINTARO 05 PAGI <br><br><br> Struktur organisasi adalah kerangka atau susunan formal yang menggambarkan bagaimana tugas, wewenang, tanggung jawab, dan hubungan antar individu atau bagian-bagian dalam sebuah organisasi diatur untuk mencapai tujuan yang ditetapkan. Struktur ini menunjukkan hierarki atau tingkatan dalam organisasi, siapa yang melapor kepada siapa, dan bagaimana aliran komunikasi dan pengambilan keputusan terjadi. </p> <img src="./gambar/struktur.webp " width=100% height=100%>
+                <p> Struktur Organisasi SDN BINTARO 05 PAGI <br><br><br> Struktur organisasi adalah kerangka atau susunan formal yang menggambarkan bagaimana tugas, wewenang, tanggung jawab, dan hubungan antar individu atau bagian-bagian dalam sebuah organisasi diatur untuk mencapai tujuan yang ditetapkan. Struktur ini menunjukkan hierarki atau tingkatan dalam organisasi, siapa yang melapor kepada siapa, dan bagaimana aliran komunikasi dan pengambilan keputusan terjadi. </p> <img src="./gambar/struktur.webp" width="100%" height="100%" loading="lazy">
             </center>
             <hr>
             <center>
                 <p> Visi dan Misi <br><br><br> A. Visi <br><br><br> Mewujudkan Satuan Pendidikan berkualitas dengan lulusan yang cerdas bertaqwa dan berakhlakul karimah. <br><br><br> <br><br><br> B. Misi Dalam upaya mengimplementasikan visi sekolah, SDN Bintaro 05 Pagi menjabarkan misi sekolah sebagai berikut: <br><br><br> <br><br><br> a. Mengembangkan budaya literasi Mengembangkan strategi pembelajaran yang menantang, menyenangkan, komunikatif, tanpa takut salah dan demokratis <br><br><br> b. Mengembangkan sikap dan prilaku religius di lingkungan dalam dan luar sekolah <br><br><br> c. Melaksanakan ibadah secara berjamaa <br><br><br> d. Memelihara lingkungan sekolah aman, nyaman, hijau, bersih dan ramah, mengembangkangkan sikap prilaku hidup bersih dan sehat <br><br><br> e. Mengembangkan kreativitas dan inovasi budaya sekolah <br><br><br> f. Mengupayakan pemanfaatan waktu belajar, sumber daya fisik dan manusia, agar memberikan hasil yang terbaik bagi perkembangan peserta didik <br><br><br> g. Menanamkan kepedulian sosial dan lingkungan, cinta damai, cinta tanah air, semangat kebangsaan dan hidup demokratis </p>
             </center>
             <hr class="full-width-line" />
-        </section> <!-- Fasilitas Sekolah Section -->
+        </section>
         <section id="fasilitas-sekolah">
             <center>
                 <h2>Fasilitas Sekolah</h2>
             </center>
             <table>
                 <tr>
-                    <td><img src="./gambar/koperasi.webp" width="200" height="200" /></td>
+                    <td><img src="./gambar/koperasi.webp" width="200" height="200" loading="lazy" /></td>
                     <td style="vertical-align: top">
                         <p> Koperasi SD Negeri Bintaro 05 Pagi adalah koperasi sekolah yang bertujuan membantu kebutuhan siswa dan guru. Koperasi ini menyediakan alat tulis, buku, dan perlengkapan lainnya dengan harga terjangkau. Selain membantu anggota, koperasi juga mengajarkan siswa tentang gotong-royong dan dasar-dasar pengelolaan keuangan. </p>
                     </td>
@@ -61,7 +65,7 @@
             <hr />
             <table>
                 <tr>
-                    <td><img src="./gambar/labkomputer.webp" width="200" height="200" /></td>
+                    <td><img src="./gambar/labkomputer.webp" width="200" height="200" loading="lazy" /></td>
                     <td style="vertical-align: top">
                         <p> Lab komputer SD Negeri Bintaro 5 adalah fasilitas belajar teknologi bagi siswa. Di sini, siswa belajar keterampilan dasar komputer, seperti mengetik, menggambar, dan mengenal internet secara aman. Lab ini mendukung pembelajaran digital dan membantu siswa lebih siap menghadapi teknologi di kehidupan sehari-hari. </p>
                     </td>
@@ -70,7 +74,7 @@
             <hr />
             <table>
                 <tr>
-                    <td><img src="./gambar/lapangan.webp" width="200" height="200" /></td>
+                    <td><img src="./gambar/lapangan.webp" width="200" height="200" loading="lazy" /></td>
                     <td style="vertical-align: top">
                         <p> Lapangan SD Negeri Bintaro 5 adalah area terbuka yang digunakan untuk berbagai kegiatan olahraga dan upacara sekolah. Lapangan ini memungkinkan siswa untuk beraktivitas fisik, seperti sepak bola, bola basket, dan senam, serta mendukung perkembangan kesehatan dan kerjasama antar siswa. </p>
                     </td>
@@ -79,7 +83,7 @@
             <hr />
             <table>
                 <tr>
-                    <td><img src="./gambar/kelas.webp" width="200" height="200" /></td>
+                    <td><img src="./gambar/kelas.webp" width="200" height="200" loading="lazy" /></td>
                     <td style="vertical-align: top">
                         <p> Ruangan kelas SD Negeri Bintaro 5 adalah tempat belajar siswa yang dilengkapi meja, kursi, papan tulis, dan alat pembelajaran. </p>
                     </td>
@@ -88,7 +92,7 @@
             <table>
                 <hr>
                 <tr>
-                    <td><img src="./gambar/masjid.webp" width="200" height="200" /></td>
+                    <td><img src="./gambar/masjid.webp" width="200" height="200" loading="lazy" /></td>
                     <td style="vertical-align: top">
                         <p> Masjid SD Negeri Bintaro 05 Pagi adalah tempat ibadah yang berada di lingkungan sekolah dasar tersebut. Masjid ini digunakan untuk kegiatan keagamaan seperti salat berjamaah, pengajian, dan kegiatan Islami lainnya, terutama bagi siswa dan guru. </p>
                     </td>
@@ -97,21 +101,21 @@
             <table>
                 <hr>
                 <tr>
-                    <td><img src="./gambar/UKS.webp" width="200" height="200" /></td>
+                    <td><img src="./gambar/UKS.webp" width="200" height="200" loading="lazy" /></td>
                     <td style="vertical-align: top">
                         <p> UKS SD Negeri Bintaro 05 Pagi adalah ruang kesehatan di sekolah yang digunakan untuk memberikan pertolongan pertama, pemeriksaan kesehatan, dan edukasi hidup sehat bagi siswa. </p>
                     </td>
                 </tr>
             </table>
             <hr class="full-width-line" />
-        </section> <!-- Ekstrakurikuler Section -->
+        </section>
         <section id="ekstrakurikuler">
             <center>
                 <h2>Ekstrakurikuler</h2>
             </center>
             <table>
                 <tr>
-                    <td><img src="./gambar/marsingband.webp" width="200" height="200" /></td>
+                    <td><img src="./gambar/marsingband.webp" width="200" height="200" loading="lazy" /></td>
                     <td style="vertical-align: top">
                         <p> Marching Band SD Negeri Bintaro 5 adalah kelompok musik yang terdiri dari siswa yang memainkan alat musik tiup dan perkusi. Mereka tampil dalam acara sekolah, seperti upacara dan perayaan, untuk memeriahkan suasana dan mengembangkan keterampilan musik serta kerjasama tim. </p>
                     </td>
@@ -120,7 +124,7 @@
             <hr />
             <table>
                 <tr>
-                    <td><img src="./gambar/tari.webp" width="200" height="200" /></td>
+                    <td><img src="./gambar/tari.webp" width="200" height="200" loading="lazy" /></td>
                     <td style="vertical-align: top">
                         <p> Tari SD Negeri Bintaro 5 adalah kegiatan seni yang melibatkan siswa untuk belajar dan menampilkan tarian tradisional maupun modern. Melalui tari, siswa dapat mengembangkan kreativitas, disiplin, dan rasa kebersamaan, serta melestarikan budaya Indonesia. </p>
                     </td>
@@ -129,7 +133,7 @@
             <hr />
             <table>
                 <tr>
-                    <td><img src="./gambar/pancaksilat.webp" width="200" height="200" /></td>
+                    <td><img src="./gambar/pancaksilat.webp" width="200" height="200" loading="lazy" /></td>
                     <td style="vertical-align: top">
                         <p> Pencak Silat di SD Negeri Bintaro 5 adalah kegiatan ekstrakurikuler yang melatih siswa seni bela diri tradisional Indonesia, meliputi teknik dasar, kuda-kuda, dan gerakan bela diri untuk meningkatkan disiplin, ketahanan fisik, dan kecintaan terhadap budaya lokal. </p>
                     </td>
@@ -138,7 +142,7 @@
             <hr />
             <table>
                 <tr>
-                    <td><img src="./gambar/futsal.webp" width="200" height="200" /></td>
+                    <td><img src="./gambar/futsal.webp" width="200" height="200" loading="lazy" /></td>
                     <td style="vertical-align: top">
                         <p> Futsal di SD Negeri Bintaro 5 adalah kegiatan olahraga rutin yang diadakan untuk siswa, bertujuan meningkatkan keterampilan, kerja sama tim, dan kebugaran fisik. Lapangannya memadai, dan siswa dilatih oleh guru olahraga berpengalaman. </p>
                     </td>
@@ -147,7 +151,7 @@
             <hr>
             <table>
                 <tr>
-                    <td><img src="./gambar/marawis.webp" width="200" height="200" /></td>
+                    <td><img src="./gambar/marawis.webp" width="200" height="200" loading="lazy" /></td>
                     <td style="vertical-align: top">
                         <p> Marawis di SD Negeri Bintaro 5 adalah kegiatan seni musik Islami yang melibatkan alat musik seperti rebana. Kegiatan ini biasanya dilakukan oleh siswa untuk melatih kreativitas, kekompakan, dan mengenalkan budaya Islami. </p>
                     </td>
@@ -156,13 +160,13 @@
             <hr>
             <table>
                 <tr>
-                    <td><img src="./gambar/melukis.webp" width="200" height="200" /></td>
+                    <td><img src="./gambar/melukis.webp" width="200" height="200" loading="lazy" /></td>
                     <td style="vertical-align: top">
                         <p> Melukis di SD Negeri Bintaro 5 adalah kegiatan seni yang mengajarkan siswa untuk mengekspresikan kreativitas melalui gambar dan warna. </p>
                     </td>
                 </tr>
             </table>
-        </section> <!-- Smooth Scroll JavaScript -->
+        </section>
         <script src="./script/script.js"> </script>
 </body>
 
