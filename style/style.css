@@ -94,13 +94,13 @@ section#ekstrakurikuler {
 
 /* Full-width horizontal line */
 .full-width-line {
-    width: 214vw;
+    /* width: 214vw; */
     height: 2px;
     background-color: #003366;
     border: none;
     margin: 30px 0;
     position: relative;
-    left: calc(-50vw + 50%);
+    /* left: calc(-50vw + 50%); */
 }
 
 h2 {
@@ -353,6 +353,7 @@ footer {
 
 footer p {
     margin: 5px 0;
+    color: white;
     font-size: 14px;
 }
 
