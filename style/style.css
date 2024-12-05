@@ -1,372 +1,358 @@
-        /* Global Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        /* Style untuk kotak biru di atas */
-        .top-blue-box {
-            width: 100%;
-            height: 70px;
-            background-color: #003366;
-            position: fixed;
-            top: 0;
-            left: 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-            z-index: 1000;
-        }
-        
-        /* Style untuk kotak biru di bawah */
-        .bottom-blue-box {
-            width: 100%;
-            height: 70px;
-            background-color: #003366;
-            position: fixed;
-            top: 70px; /* Posisi di bawah kotak pertama */
-            left: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0 20px;
-            z-index: 999; /* Z-index lebih rendah dari kotak pertama */
-        }
-        
-        /* Style untuk logo */
-        .top-blue-box img {
-            height: 50px;
-        }
-        
-        /* Style untuk nama sekolah */
-        .school-name {
-            color: white;
-            font-size: 14px;
-            margin-left: 10px;
-        }
-        
-        /* Style untuk navigasi */
-        .nav-links {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        
-        .nav-links a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Style untuk link terakhir */
-        .nav-links a:last-child {
-            margin-right: 0;
-        }
-        
-        section {
-            margin: 100px 20px 50px 20px;
-            padding-top: 70px;
-            position: relative;
-        }
-        
-        /* Profil Sekolah Section */
-        section#profil-sekolah {
-            margin-top: -30px;
-            padding-top: 3px;
-        }
-        
-        /* Fasilitas Sekolah Section */
-        section#fasilitas-sekolah {
-            margin-top: -30px;
-            padding-top: 3px;
-        }
-        
-        /* Ekstrakurikuler Section */
-        section#ekstrakurikuler {
-            margin-top: -30px;
-            padding-top: 3px;
-        }
-        
-        /* Full-width horizontal line */
-        .full-width-line {
-            width: 214vw;
-            height: 2px;
-            background-color: #003366;
-            border: none;
-            margin: 30px 0;
-            position: relative;
-            left: calc(-50vw + 50%);
-        }
-        
-        h2 {
-            color: #003366;
-            font-size: 24px;
-        }
-        
-        p {
-            font-size: 18px;
-            color: #333;
-        }
-        
-        /* Slideshow container */
-        .slideshow-container {
-            width: 100%;
-            height: 100vh;
-            position: relative;
-            margin: 0;
-            transform: translateY(-30px);
-        }
-        
-        /* Set gambar untuk menutupi seluruh layar */
-        .slides {
-            display: none;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin: 0;
-            padding: 0;
-            z-index: 1;
-        }
-        
-        /* Active slide */
-        .active {
-            display: block;
-        }
-        
-        /* Animasi fade */
-        .fade {
-            animation: fadeEffect 1.5s;
-        }
-        
-        @keyframes fadeEffect {
-            from {
-                opacity: 0.5;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        
-        /* Garis */
-        hr {
-            width: 114vw;
-            border: none;
-            height: 2px;
-            background-color: black;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        /* Video container */
-        .video-container {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #000;
-        }
-        
-        .video-container video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .slideshow-container {
-            margin-top: 20px;
-        }
-        
-        /* Style untuk beranda-slideshow */
-        #beranda-slideshow {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-        
-        #beranda-slideshow .slides {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-        }
-        
-        #beranda-slideshow .active {
-            display: block;
-        }
-        
-        #beranda-slideshow .fade {
-            animation: fadeEffect 1.5s;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        
-        footer p {
-            margin: 5px 0;
-            font-size: 14px;
-        }
-        
-        footer a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        
-        footer a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Media Queries untuk Responsif */
-        
-        /* Mobile Devices (Portrait) */
-        @media only screen and (max-width: 600px) {
-            .top-blue-box, .bottom-blue-box {
-                flex-direction: column;
-                height: auto;
-                padding: 10px;
-            }
-        
-            .school-name {
-                font-size: 12px;
-                margin-left: 0;
-            }
-        
-            .nav-links {
-                flex-direction: column;
-                align-items: center;
-            }
-        
-            .nav-links a {
-                font-size: 14px;
-                margin-bottom: 10px;
-            }
-        
-            .nav-links a:last-child {
-                margin-right: 0;
-                margin-bottom: 0;
-            }
-        
-            section {
-                margin-top: 100px;
-                padding-top: 70px;
-            }
-        
-            .slideshow-container {
-                height: 50vh; /* Kurangi tinggi slideshow untuk ponsel */
-            }
-        
-            .slides {
-                object-fit: cover;
-            }
-        
-            hr {
-                width: 100vw; /* Ubah lebar garis agar lebih sesuai dengan layar kecil */
-            }
-        
-            .video-container {
-                height: 50vh; /* Kurangi tinggi video untuk ponsel */
-            }
-        
-            .video-container video {
-                object-fit: cover;
-            }
-        
-            h2 {
-                font-size: 20px;
-            }
-        
-            p {
-                font-size: 16px;
-            }
-        
-            footer p {
-                font-size: 12px;
-            }
-        }
-        
-        /* Tablet Devices */
-        @media only screen and (max-width: 768px) {
-            .top-blue-box, .bottom-blue-box {
-                flex-direction: column;
-                padding: 10px;
-            }
-        
-            .school-name {
-                font-size: 14px;
-            }
-        
-            .nav-links {
-                flex-direction: column;
-                gap: 10px;
-                align-items: center;
-            }
-        
-            .nav-links a {
-                font-size: 16px;
-            }
-        
-            section {
-                margin-top: 100px;
-            }
-        
-            .slideshow-container {
-                height: 60vh;
-            }
-        
-            .video-container {
-                height: 60vh;
-            }
-        
-            hr {
-                width: 100vw;
-            }
-        
-            h2 {
-                font-size: 22px;
-            }
-        
-            p {
-                font-size: 17px;
-            }
-        
-            footer p {
-                font-size: 13px;
-            }
-        }
-        
-        /* Desktop Devices */
-        @media only screen and (min-width: 1024px) {
-            .slideshow-container {
-                height: 100vh;
-            }
-        
-            .video-container {
-                height: 100vh;
-            }
-        
-            hr {
-                width: 100vw;
-            }
-        }
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style untuk kotak biru di atas */
+.top-blue-box {
+    width: 100%;
+    height: 70px;
+    background-color: #003366;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+/* Style untuk kotak biru di bawah */
+.bottom-blue-box {
+    width: 100%;
+    height: 70px;
+    background-color: #003366;
+    position: fixed;
+    top: 70px; /* Posisi di bawah kotak pertama */
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    z-index: 999; /* Z-index lebih rendah dari kotak pertama */
+}
+
+/* Style untuk logo */
+.top-blue-box img {
+    height: 50px;
+}
+
+/* Style untuk nama sekolah */
+.school-name {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* Style untuk navigasi */
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Style untuk link terakhir */
+.nav-links a:last-child {
+    margin-right: 0;
+}
+
+section {
+    margin: 100px 20px 50px 20px;
+    padding-top: 70px;
+    position: relative;
+}
+
+/* Profil Sekolah Section */
+section#profil-sekolah {
+    margin-top: -30px;
+    padding-top: 3px;
+}
+
+/* Fasilitas Sekolah Section */
+section#fasilitas-sekolah {
+    margin-top: -30px;
+    padding-top: 3px;
+}
+
+/* Ekstrakurikuler Section */
+section#ekstrakurikuler {
+    margin-top: -30px;
+    padding-top: 3px;
+}
+
+/* Full-width horizontal line */
+.full-width-line {
+    width: 100%;
+    height: 2px;
+    background-color: #003366;
+    border: none;
+    margin: 30px 0;
+    position: relative;
+    left: 0;
+}
+
+/* Garis */
+hr {
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-color: black;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    transform: translateY(-30px);
+}
+
+/* Set gambar untuk menutupi seluruh layar */
+.slides {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+/* Active slide */
+.active {
+    display: block;
+}
+
+/* Animasi fade */
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Video container */
+.video-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Style untuk beranda-slideshow */
+#beranda-slideshow {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#beranda-slideshow .slides {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#beranda-slideshow .active {
+    display: block;
+}
+
+#beranda-slideshow .fade {
+    animation: fadeEffect 1.5s;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries untuk Responsif */
+
+/* Mobile Devices (Portrait) */
+@media only screen and (max-width: 600px) {
+    .top-blue-box, .bottom-blue-box {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .school-name {
+        font-size: 12px;
+        margin-left: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .nav-links a:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    section {
+        margin-top: 100px;
+        padding-top: 70px;
+    }
+
+    .slideshow-container {
+        height: 50vh; /* Kurangi tinggi slideshow untuk ponsel */
+    }
+
+    .slides {
+        object-fit: cover;
+    }
+
+    hr {
+        width: 100vw; /* Ubah lebar garis agar lebih sesuai dengan layar kecil */
+    }
+
+    .video-container {
+        height: 50vh; /* Kurangi tinggi video untuk ponsel */
+    }
+
+    .video-container video {
+        object-fit: cover;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (max-width: 768px) {
+    .top-blue-box, .bottom-blue-box {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .school-name {
+        font-size: 14px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    section {
+        margin-top: 100px;
+    }
+
+    .slideshow-container {
+        height: 60vh;
+    }
+
+    .video-container {
+        height: 60vh;
+    }
+
+    hr {
+        width: 100vw;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+}
+
+/* Desktop Devices */
+@media only screen and (min-width: 1024px) {
+    .slideshow-container {
+        height: 100vh;
+    }
+
+    .video-container {
+        height: 100vh;
+    }
+
+    hr {
+        width: 100vw;
+    }
+}
