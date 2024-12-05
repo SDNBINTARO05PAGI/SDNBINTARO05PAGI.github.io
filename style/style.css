@@ -94,24 +94,23 @@ section#ekstrakurikuler {
 
 /* Full-width horizontal line */
 .full-width-line {
-    width: 100%;
+    width: 214vw;
     height: 2px;
     background-color: #003366;
     border: none;
     margin: 30px 0;
     position: relative;
-    left: 0;
+    left: calc(-50vw + 50%);
 }
 
-/* Garis */
-hr {
-    width: 100%;
-    border: none;
-    height: 2px;
-    background-color: black;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+h2 {
+    color: #003366;
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
 }
 
 /* Slideshow container */
@@ -156,6 +155,17 @@ hr {
     }
 }
 
+/* Garis */
+hr {
+    width: 114vw;
+    border: none;
+    height: 2px;
+    background-color: black;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /* Video container */
 .video-container {
     width: 100%;
@@ -170,6 +180,10 @@ hr {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.slideshow-container {
+    margin-top: 20px;
 }
 
 /* Style untuk beranda-slideshow */
@@ -196,6 +210,134 @@ hr {
 
 #beranda-slideshow .fade {
     animation: fadeEffect 1.5s;
+}
+
+/* Media Queries untuk Responsif */
+
+/* Mobile Devices (Portrait) */
+@media only screen and (max-width: 600px) {
+    .top-blue-box, .bottom-blue-box {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .school-name {
+        font-size: 12px;
+        margin-left: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .nav-links a:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    section {
+        margin-top: 100px;
+        padding-top: 70px;
+    }
+
+    .slideshow-container {
+        height: 50vh; /* Kurangi tinggi slideshow untuk ponsel */
+    }
+
+    .slides {
+        object-fit: cover;
+    }
+
+    hr {
+        width: 100vw; /* Ubah lebar garis agar lebih sesuai dengan layar kecil */
+    }
+
+    .video-container {
+        height: 50vh; /* Kurangi tinggi video untuk ponsel */
+    }
+
+    .video-container video {
+        object-fit: cover;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (max-width: 768px) {
+    .top-blue-box, .bottom-blue-box {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .school-name {
+        font-size: 14px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    section {
+        margin-top: 100px;
+    }
+
+    .slideshow-container {
+        height: 60vh;
+    }
+
+    .video-container {
+        height: 60vh;
+    }
+
+    hr {
+        width: 100vw;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+}
+
+/* Desktop Devices */
+@media only screen and (min-width: 1024px) {
+    .slideshow-container {
+        height: 100vh;
+    }
+
+    .video-container {
+        height: 100vh;
+    }
+
+    hr {
+        width: 100vw;
+    }
 }
 
 /* Footer */
