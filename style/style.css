@@ -189,7 +189,7 @@ hr {
 /* Style untuk beranda-slideshow */
 #beranda-slideshow {
     position: relative;
-    width: 100%;
+    width: auto;
     height: 100vh;
     overflow: hidden;
 }
