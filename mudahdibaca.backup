@@ -265,6 +265,19 @@
                     </td>
                 </tr>
             </table>
+<hr>
+      <table>
+        <tr>
+          <td><img src="pramuka.png" width="200" height="200" /></td>
+          <td style="vertical-align: top">
+            <p>
+           Pramuka di SD Negeri Bintaro 5 adalah 
+           kegiatan ekstrakurikuler yang bertujuan untuk membentuk karakter siswa yang disiplin, mandiri, kreatif, dan memiliki semangat kebersamaan.
+              
+            </p>
+          </td>
+        </tr>
+      </table>
         </section>
         <script src="./script/script.js"></script>
         <footer><p>© 2024 SDN Bintaro 05 Pagi. All Rights Reserved.</p></footer>
